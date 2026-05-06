@@ -1,0 +1,23 @@
+.ocr-history-reason {
+    margin-right: 0.75rem;
+    padding: 0.55rem 0.75rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.ocr-history-reason .boxed__content {
+    padding: 0;
+}
+
+.okay_list .okay_list_order_cancellation_name {
+    width: calc(100% - 40px - 220px - 80px);
+    min-width: 100px;
+}
+
+.okay_list .okay_list_order_cancellation_other {
+    width: 220px;
+}
+
+.okay_list .okay_list_close {
+    width: 80px;
+}

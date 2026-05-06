@@ -1,0 +1,23 @@
+{
+  "Okay": "4.5.2",
+  "version": "1.0.0",
+  "name": "Order Cancellation Reason",
+  "description": "Вибір причини скасування при зміні статусу замовлення на «Скасовано». Перелік причин налаштовується в адмінці; завжди є опція «Інша причина» з ручним введенням.",
+  "vendor": {
+    "email": "devsviat@proton.me",
+    "site": "https://github.com/devSviat"
+  },
+  "modifications": {
+    "backend": [
+      {
+        "file": "order_history.tpl",
+        "changes": [
+          {
+            "find": "history_item->new_status_id]->color",
+            "appendAfter": "order_history_cancellation_reason_snippet.tpl"
+          }
+        ]
+      }
+    ]
+  }
+}
