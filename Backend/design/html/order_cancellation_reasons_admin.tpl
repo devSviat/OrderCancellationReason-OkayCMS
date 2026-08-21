@@ -132,7 +132,7 @@
                 <div class="heading_modal">{$btr->index_confirm|escape}</div>
             </div>
             <div class="modal-body">
-                <button type="button" class="btn btn_small btn_blue fn_ocr_confirm_delete mx-h">
+                <button type="button" class="btn btn_small btn_blue fn_ocr_confirm_delete mx-h" data-dismiss="modal">
                     {include file='svg_icon.tpl' svgId='checked'}
                     <span>{$btr->index_yes|escape}</span>
                 </button>
@@ -163,7 +163,6 @@ $(function() {
             $row.find('input[name="delete_reason[]"]').prop('checked', true);
             ocrDeleteBtn.closest('form').submit();
         }
-        $('#ocr_delete_modal').modal('hide');
         ocrDeleteBtn = null;
     });
 });

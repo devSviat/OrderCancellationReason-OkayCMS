@@ -92,7 +92,7 @@ $(function() {
         var opt = $select.find("option[value='" + reasonId + "']");
         var isOther = opt.length ? parseInt(opt.data("is-other"), 10) : 0;
         if (isOther === 1) {
-            var text = $.trim($modal.find("textarea[name=cancellation_reason_text]").val());
+            var text = String($modal.find("textarea[name=cancellation_reason_text]").val() || "").trim();
             if (!text) {
                 showError(msgOtherRequired);
                 $modal.find("textarea[name=cancellation_reason_text]").focus();
