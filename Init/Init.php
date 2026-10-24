@@ -21,23 +21,23 @@ class Init extends AbstractInit
     {
         $this->setBackendMainController('OrderCancellationReasonsAdmin');
 
-        $nameField = (new EntityField('name'))->setTypeVarchar(255)->setIsLang();
+        $nameField = new EntityField('name')->setTypeVarchar(255)->setIsLang();
         $this->migrateEntityTable(OrderCancellationReasonEntity::class, [
-            (new EntityField('id'))->setIndexPrimaryKey()->setTypeInt(11, false)->setAutoIncrement(),
+            new EntityField('id')->setIndexPrimaryKey()->setTypeInt(11, false)->setAutoIncrement(),
             $nameField,
-            (new EntityField('position'))->setTypeInt(11, false)->setDefault(0),
-            (new EntityField('is_other'))->setTypeTinyInt(1, false)->setDefault(0),
+            new EntityField('position')->setTypeInt(11, false)->setDefault(0),
+            new EntityField('is_other')->setTypeTinyInt(1, false)->setDefault(0),
         ]);
         $this->migrateEntityField(OrderCancellationReasonEntity::class, $nameField);
         $this->registerEntityLangInfo(OrderCancellationReasonEntity::class, 'sviat__order_cancellation_reasons', 'order_cancellation_reason');
 
         $this->migrateEntityField(
             OrdersEntity::class,
-            (new EntityField('cancellation_reason_id'))->setTypeInt(11, true)
+            new EntityField('cancellation_reason_id')->setTypeInt(11, true)
         );
         $this->migrateEntityField(
             OrdersEntity::class,
-            (new EntityField('cancellation_reason_text'))->setTypeText()->setNullable()
+            new EntityField('cancellation_reason_text')->setTypeText()->setNullable()
         );
 
         $this->createDefaultReasons();
