@@ -28,7 +28,7 @@ class OrderCancellationReasonsAdmin extends IndexAdmin
                 $deleteIds = $deleteIds !== null && $deleteIds !== '' ? [(int) $deleteIds] : [];
             }
             $deletedIds = [];
-            $candidateIds = array_filter(array_map('intval', $deleteIds));
+            $candidateIds = array_filter(array_map(intval(...), $deleteIds));
             if (!empty($candidateIds)) {
                 $reasons = $reasonEntity->find(['id' => $candidateIds]);
                 $idsToDelete = [];
