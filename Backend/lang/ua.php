@@ -2,13 +2,13 @@
 
 $lang['sviat__order_cancellation_reason__admin_title'] = 'Причини скасування замовлень';
 $lang['sviat__order_cancellation_reason__cancelled_status'] = 'Статус «Скасовано»';
-$lang['sviat__order_cancellation_reason__cancelled_status_hint'] = 'Виберіть статус замовлення, який вважається скасованим. При зміні на цей статус буде потрібно обрати причину скасування.';
+$lang['sviat__order_cancellation_reason__cancelled_status_hint'] = 'Виберіть статус замовлення, який вважається скасованим. Під час зміни на цей статус треба буде обрати причину скасування.';
 $lang['sviat__order_cancellation_reason__select_status'] = '— не обрано —';
 $lang['sviat__order_cancellation_reason__reasons_list'] = 'Перелік причин скасування';
 $lang['sviat__order_cancellation_reason__reasons_list_hint'] = 'Додайте причини, які пропонуються менеджеру при скасуванні. Пункт «Інша причина» завжди є і не видаляється — для нього вказують причину вручну.';
 $lang['sviat__order_cancellation_reason__reason_name'] = 'Назва причини';
-$lang['sviat__order_cancellation_reason__is_other'] = 'Інша (ввод вручну)';
-$lang['sviat__order_cancellation_reason__is_other_hint'] = 'Якщо увімкнено — при скасуванні замовлення буде показано поле для введення причини текстом (наприклад, «Інша причина»). Таку причину не можна видалити.';
+$lang['sviat__order_cancellation_reason__is_other'] = 'Інша (введення вручну)';
+$lang['sviat__order_cancellation_reason__is_other_hint'] = 'Якщо увімкнено, під час скасування замовлення буде показано поле для введення причини текстом (наприклад, «Інша причина»). Таку причину не можна видалити.';
 $lang['sviat__order_cancellation_reason__other_type'] = 'Інша причина';
 $lang['sviat__order_cancellation_reason__select_reason'] = 'Причина';
 $lang['sviat__order_cancellation_reason__select_reason_placeholder'] = 'Оберіть причину';
